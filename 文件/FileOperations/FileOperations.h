@@ -26,10 +26,7 @@ enum ORDER_FLAG
     DESC = 1
 };
 
-//正则表达式
-#define REG_RULE "[0-9]+(?=.(jpe?g|png|bmp|JPG?G|PNG|BMP))"
-
 //获取目录下的所有文件
-void GetFileNames(string path, vector<string>& filenames, int order_flag, bool reg_flag);
+void GetFileNames(string path, vector<string>& filenames, int order_flag, string reg = "");
 
 #endif  // FILEOPERATIONS_H
