@@ -6,6 +6,7 @@
  * @version 1.2.0
  * @note    2021.11.2:添加正则模块
  *          2021.11.3:修改正则输入方式
+ *          2021.12.9:修改注释
  */
 
 #include "FileOperations.h"
@@ -17,9 +18,10 @@
  * @param order_flag 升/降序标识符
  * @note  order_flag: ASC=升序 DESC=降序
  *        reg       : 正则表达式字符串,默认不使用正则
- * @example String         path = "/home/test";
+ * @example string         path = "/home/test";
+            string         reg  = "[0-9]+(?=.(jpe?g|png|bmp|JPG?G|PNG|BMP))";
             vector<string> filenames;
-            GetFileNames(path, filenames, ASC, true);
+            GetFileNames(path, filenames, ASC, reg);
             for (size_t i = 0; i < filenames.size(); i++)
                cout << filenames[i] << endl;
  */

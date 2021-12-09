@@ -3,8 +3,9 @@
  * @brief   取一个路径下所有的文件名(可根据正则表达式)
  * @author  xiadengma
  * @date    2021.11.2
- * @version 1.1.0
+ * @version 1.2.0
  * @note    2021.11.2:添加正则模块
+ *          2021.11.3:修改正则输入方式
  */
 
 #ifndef FILEOPERATIONS_H
